@@ -60,8 +60,8 @@ desenvolvimento para que eu compreendesse as escolhas feitas no projeto.
 
 ## Site publicado
 
-Link do GitHub Pages será adicionado aqui.
+https://mariavitoriabenaglia.github.io/portfolio-maria-vitoria/
 
 ## Repositório
 
-Link do repositório GitHub será adicionado aqui.
+https://github.com/mariavitoriabenaglia/portfolio-maria-vitoria
