@@ -60,7 +60,9 @@ desenvolvimento para que eu compreendesse as escolhas feitas no projeto.
 
 ## Site publicado
 
-https://mariavitoriabenaglia.github.io/portfolio-maria-vitoria/
+GitHub Pages: https://mariavitoriabenaglia.github.io/portfolio-maria-vitoria/
+
+Vercel: https://portfolio-maria-vitoria.vercel.app/
 
 ## Repositório
 
