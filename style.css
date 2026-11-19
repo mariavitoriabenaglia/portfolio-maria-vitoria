@@ -838,6 +838,24 @@ a:focus-visible {
     border-radius: var(--raio-medio);
 }
 
+.projeto figure .projeto-imagem-completa {
+    aspect-ratio: auto;
+}
+
+.projeto-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: var(--cor-destaque);
+    text-underline-offset: 0.25em;
+}
+
+.projeto-link:hover {
+    color: var(--cor-destaque-clara);
+}
+
 .tags {
     display: flex;
     flex-wrap: wrap;
