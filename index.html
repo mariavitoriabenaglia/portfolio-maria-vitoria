@@ -32,9 +32,15 @@
       as="font"
       type="font/woff2"
       crossorigin>
-    <link rel="preload" href="fonts/playfair-display-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link
+      rel="preload"
+      href="fonts/playfair-display-latin-italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="components/WhatsAppFloatingButton.js" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -114,6 +120,52 @@
         <symbol id="icon-expand" viewBox="0 0 24 24">
           <path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6" />
         </symbol>
+        <symbol id="icon-plane" viewBox="0 0 24 24">
+          <path d="m22 2-7 20-4-9-9-4Z" />
+          <path d="m22 2-11 11" />
+        </symbol>
+        <symbol id="icon-search" viewBox="0 0 24 24">
+          <circle cx="10.5" cy="10.5" r="6.5" />
+          <path d="m16 16 5 5" />
+        </symbol>
+        <symbol id="icon-document" viewBox="0 0 24 24">
+          <path
+            d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"
+          />
+          <path d="M14 2v6h6M8 13h8m-8 4h5" />
+        </symbol>
+        <symbol id="icon-controls" viewBox="0 0 24 24">
+          <path d="M4 5h16M4 12h16M4 19h16" />
+          <circle cx="8" cy="5" r="2" />
+          <circle cx="16" cy="12" r="2" />
+          <circle cx="10" cy="19" r="2" />
+        </symbol>
+        <symbol id="icon-report" viewBox="0 0 24 24">
+          <path d="M4 3v18h17M8 16v-5m5 5V7m5 9v-3" />
+        </symbol>
+        <symbol id="icon-people" viewBox="0 0 24 24">
+          <circle cx="9" cy="8" r="3" />
+          <path
+            d="M3 21v-3a6 6 0 0 1 12 0v3m1-16a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 4v3"
+          />
+        </symbol>
+        <symbol id="icon-shield" viewBox="0 0 24 24">
+          <path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z" />
+          <path d="m8 12 3 3 5-6" />
+        </symbol>
+        <symbol id="icon-lock" viewBox="0 0 24 24">
+          <rect x="5" y="10" width="14" height="11" rx="2" />
+          <path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2" />
+        </symbol>
+        <symbol id="icon-clipboard" viewBox="0 0 24 24">
+          <rect x="5" y="4" width="14" height="18" rx="2" />
+          <rect x="9" y="2" width="6" height="4" rx="1" />
+          <path d="M9 11h6m-6 4h6m-6 4h3" />
+        </symbol>
+        <symbol id="icon-check-circle" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="m8 12 3 3 5-6" />
+        </symbol>
       </defs>
     </svg>
     <header class="cabecalho">
@@ -173,9 +225,7 @@
             <div class="hero-texto">
               <p class="eyebrow">Empreendedora · Profissional independente</p>
               <h1 id="titulo-principal">
-                Suporte próximo.<br>Para você e o <span
-                  >seu negócio.</span
-                >
+                Suporte próximo.<br>Para você e o <span>seu negócio.</span>
               </h1>
               <p class="hero-lead">
                 Sou Maria Vitoria Benaglia, empreendedora e profissional
@@ -276,10 +326,7 @@
               cursos.
             </p>
           </header>
-          <div
-            class="service-modality"
-            data-reveal
-          >
+          <div class="service-modality" data-reveal>
             <p class="modality-label">A / Serviço principal</p>
             <h3 id="acompanhamento-titulo">
               Acompanhamento contínuo e personalizado
@@ -300,16 +347,46 @@
                 ><span class="service-number" aria-hidden="true">01</span>
               </div>
               <h4>Assistência pessoal<br>e virtual</h4>
-              <p>
-                Apoio nas demandas do dia a dia, com atenção ao que pede
-                acompanhamento.
-              </p>
-              <ul class="service-benefits">
-                <li>Agendas e compromissos</li>
-                <li>Planejamento de viagens</li>
-                <li>Tarefas pessoais e resolução de pendências</li>
-                <li>Pesquisas e busca de soluções</li>
+              <p>Compromissos e pendências acompanhados com atenção.</p>
+              <ul class="service-keywords">
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-calendar" /></svg
+                  >Agenda
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-plane" /></svg
+                  >Viagens
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-check" /></svg
+                  >Pendências
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-search" /></svg
+                  >Pesquisas
+                </li>
               </ul>
+              <details class="case-study service-details">
+                <summary
+                  aria-label="Ver atividades de assistência pessoal e virtual"
+                >
+                  Ver atividades<svg class="icon" aria-hidden="true">
+                    <use href="#icon-plus" />
+                  </svg>
+                </summary>
+                <div class="service-details-body">
+                  <ul class="service-benefits">
+                    <li>Agendas e compromissos</li>
+                    <li>Planejamento de viagens</li>
+                    <li>Tarefas pessoais e resolução de pendências</li>
+                    <li>Pesquisas e busca de soluções</li>
+                  </ul>
+                </div>
+              </details>
               <a
                 class="text-link"
                 href="https://wa.me/5519993343468?text=Oi%20Maria%2C%20gostaria%20de%20conversar%20sobre%20acompanhamento%20de%20demandas%20pessoais."
@@ -334,19 +411,51 @@
               </div>
               <h4>Organização administrativa<br>e processos</h4>
               <p>
-                Suporte operacional para acompanhar as tarefas e informações que
-                fazem o negócio funcionar.
+                Informações e tarefas alinhadas ao funcionamento do negócio.
               </p>
-              <ul class="service-benefits">
-                <li>Planilhas, documentos e arquivos digitais</li>
-                <li>Estruturação de controles e processos internos</li>
-                <li>Pesquisa de fornecedores e serviços</li>
-                <li>Acompanhamento de tarefas e prazos</li>
+              <ul class="admin-keywords">
                 <li>
-                  Suporte operacional e acompanhamento de clientes, conforme o
-                  escopo
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-document" /></svg
+                  ><span>Documentos<small>Planilhas e arquivos</small></span>
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-controls" /></svg
+                  ><span>Processos<small>Tarefas e prazos</small></span>
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-search" /></svg
+                  ><span>Fornecedores<small>Pesquisas e serviços</small></span>
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-people" /></svg
+                  ><span>Clientes<small>Suporte conforme o escopo</small></span>
                 </li>
               </ul>
+              <details class="case-study service-details">
+                <summary
+                  aria-label="Ver atividades de organização administrativa e processos"
+                >
+                  Ver atividades<svg class="icon" aria-hidden="true">
+                    <use href="#icon-plus" />
+                  </svg>
+                </summary>
+                <div class="service-details-body">
+                  <ul class="service-benefits">
+                    <li>Planilhas, documentos e arquivos digitais</li>
+                    <li>Estruturação de controles e processos internos</li>
+                    <li>Pesquisa de fornecedores e serviços</li>
+                    <li>Acompanhamento de tarefas e prazos</li>
+                    <li>
+                      Suporte operacional e acompanhamento de clientes, conforme
+                      o escopo
+                    </li>
+                  </ul>
+                </div>
+              </details>
               <a
                 class="text-link"
                 href="https://wa.me/5519993343468?text=Oi%20Maria%2C%20gostaria%20de%20conversar%20sobre%20apoio%20administrativo%20e%20processos%20do%20meu%20neg%C3%B3cio."
@@ -366,13 +475,105 @@
                 ><span class="service-label">Controles e movimentações</span
                 ><span class="service-number" aria-hidden="true">03</span>
               </div>
-              <h4>Organização financeira administrativa</h4>
-              <div class="finance-layout">
-                <div>
-                  <p>
-                    A partir dos documentos enviados por você, preparo controles
-                    para facilitar a visualização das movimentações.
-                  </p>
+              <div class="finance-heading">
+                <h4>Organização financeira administrativa</h4>
+                <p>
+                  Dos documentos que você envia a uma visão das movimentações.
+                </p>
+              </div>
+              <ol class="finance-flow" aria-label="Fluxo do apoio financeiro">
+                <li>
+                  <span class="flow-symbol"
+                    ><svg class="icon" aria-hidden="true">
+                      <use href="#icon-document" /></svg
+                  ></span>
+                  <div>
+                    <strong>Documentos recebidos</strong
+                    ><small>Extratos e comprovantes</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="flow-symbol"
+                    ><svg class="icon" aria-hidden="true">
+                      <use href="#icon-folder" /></svg
+                  ></span>
+                  <div>
+                    <strong>Organização</strong
+                    ><small>Receitas e despesas</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="flow-symbol"
+                    ><svg class="icon" aria-hidden="true">
+                      <use href="#icon-controls" /></svg
+                  ></span>
+                  <div>
+                    <strong>Controles</strong
+                    ><small>Contas e vencimentos</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="flow-symbol"
+                    ><svg class="icon" aria-hidden="true">
+                      <use href="#icon-report" /></svg
+                  ></span>
+                  <div>
+                    <strong>Relatórios</strong
+                    ><small>Visão das movimentações</small>
+                  </div>
+                </li>
+              </ol>
+              <aside
+                class="finance-scope"
+                aria-label="Transparência e limites do apoio financeiro"
+              >
+                <div class="transparency-heading">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-shield" /></svg
+                  ><strong>Transparência em cada etapa</strong>
+                </div>
+                <ul class="transparency-list">
+                  <li>
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#icon-document" /></svg
+                    ><span
+                      ><strong>Você fornece os extratos</strong
+                      ><small
+                        >Aplicativo financeiro sem conexão bancária.</small
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#icon-lock" /></svg
+                    ><span
+                      ><strong>Sem acesso às contas bancárias</strong
+                      ><small>Não solicito senhas.</small></span
+                    >
+                  </li>
+                  <li>
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#icon-shield" /></svg
+                    ><span
+                      ><strong>Sem movimentações financeiras</strong
+                      ><small>O apoio é administrativo.</small></span
+                    >
+                  </li>
+                </ul>
+                <p class="finance-exclusions">
+                  Não inclui contabilidade, consultoria de investimentos ou
+                  gestão de patrimônio.
+                </p>
+              </aside>
+              <details class="case-study service-details">
+                <summary
+                  aria-label="Ver atividades de organização financeira administrativa"
+                >
+                  Ver atividades<svg class="icon" aria-hidden="true">
+                    <use href="#icon-plus" />
+                  </svg>
+                </summary>
+                <div class="service-details-body">
                   <ul class="service-benefits">
                     <li>Organização dos extratos fornecidos pelo cliente</li>
                     <li>Classificação de receitas e despesas</li>
@@ -382,24 +583,7 @@
                     <li>Relatórios de movimentações</li>
                   </ul>
                 </div>
-                <aside
-                  class="finance-scope"
-                  aria-label="Escopo do apoio financeiro"
-                >
-                  <strong>Os dados são fornecidos por você.</strong>
-                  <p>
-                    Os extratos e documentos são organizados em um aplicativo
-                    financeiro sem conexão bancária. Não tenho acesso às suas
-                    contas bancárias, não solicito senhas e não realizo
-                    movimentações financeiras.
-                  </p>
-                  <p>
-                    O serviço é de apoio administrativo. Não inclui
-                    contabilidade, consultoria de investimentos ou gestão de
-                    patrimônio.
-                  </p>
-                </aside>
-              </div>
+              </details>
               <a
                 class="text-link"
                 href="https://wa.me/5519993343468?text=Oi%20Maria%2C%20gostaria%20de%20conhecer%20seu%20servi%C3%A7o%20de%20organiza%C3%A7%C3%A3o%20financeira%20administrativa."
@@ -464,10 +648,11 @@
                 ></a>
               </article>
               <article
-                class="offer-card"
+                class="offer-card offer-card-featured"
                 data-offer-id="profissional"
                 aria-labelledby="oferta-profissional"
               >
+                <p class="offer-badge">Mais escolhido</p>
                 <p class="offer-label">Site por projeto</p>
                 <h4 id="oferta-profissional">Profissional</h4>
                 <data class="offer-price" value="250" data-currency="BRL"
@@ -485,7 +670,7 @@
                   <li>Duas rodadas de ajustes</li>
                 </ul>
                 <a
-                  class="button button-secondary"
+                  class="button button-primary"
                   href="https://wa.me/5519993343468?text=Oi%20Maria%2C%20tenho%20interesse%20no%20site%20Profissional%20com%20valor%20de%20lan%C3%A7amento%20de%20R%24%20250.%20Gostaria%20de%20conversar%20sobre%20meu%20projeto."
                   target="_blank"
                   rel="noopener noreferrer"
@@ -570,81 +755,101 @@
             data-reveal
           >
             <li>
-              <span class="process-number" aria-hidden="true">01</span>
-              <h3>Primeiro contato</h3>
-              <p>
-                Você apresenta sua necessidade pelo WhatsApp e me conta o que
-                está buscando.
-              </p>
+              <div class="process-node" aria-hidden="true">
+                <span class="process-number">01</span
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#icon-message" />
+                </svg>
+              </div>
+              <div class="process-copy">
+                <h3>Primeiro contato</h3>
+                <p>Você conta o que precisa pelo WhatsApp.</p>
+              </div>
             </li>
             <li>
-              <span class="process-number" aria-hidden="true">02</span>
-              <h3>Entendimento inicial</h3>
-              <p>
-                Avaliamos se meu serviço é adequado à demanda e se existe
-                intenção de seguir com a contratação.
-              </p>
+              <div class="process-node" aria-hidden="true">
+                <span class="process-number">02</span
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#icon-search" />
+                </svg>
+              </div>
+              <div class="process-copy">
+                <h3>Entendimento inicial</h3>
+                <p>Alinhamos a demanda e a intenção de contratar.</p>
+              </div>
             </li>
             <li>
-              <span class="process-number" aria-hidden="true">03</span>
-              <h3>Reunião de briefing</h3>
-              <p>
-                Uma reunião gratuita para potenciais clientes com demanda
-                alinhada ao meu trabalho e interesse em contratar.
-              </p>
+              <div class="process-node" aria-hidden="true">
+                <span class="process-number">03</span
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#icon-clipboard" />
+                </svg>
+              </div>
+              <div class="process-copy">
+                <h3>Reunião de briefing</h3>
+                <p>
+                  Briefing gratuito para potenciais clientes com demanda
+                  alinhada e intenção de contratação.
+                </p>
+              </div>
             </li>
             <li>
-              <span class="process-number" aria-hidden="true">04</span>
-              <h3>Proposta personalizada</h3>
-              <p>
-                Definimos escopo, prioridades, orçamento e condições para o
-                trabalho.
-              </p>
+              <div class="process-node" aria-hidden="true">
+                <span class="process-number">04</span
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#icon-document" />
+                </svg>
+              </div>
+              <div class="process-copy">
+                <h3>Proposta personalizada</h3>
+                <p>Combinamos escopo, prioridades, orçamento e condições.</p>
+              </div>
             </li>
             <li>
-              <span class="process-number" aria-hidden="true">05</span>
-              <h3>Início do trabalho</h3>
-              <p>
-                Com a proposta aprovada e a contratação formalizada, começamos o
-                acompanhamento ou o projeto combinado.
-              </p>
+              <div class="process-node" aria-hidden="true">
+                <span class="process-number">05</span
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#icon-check-circle" />
+                </svg>
+              </div>
+              <div class="process-copy">
+                <h3>Início do trabalho</h3>
+                <p>
+                  Após aprovação e contratação, começamos o trabalho combinado.
+                </p>
+              </div>
             </li>
           </ol>
           <div class="experience-panel" data-reveal>
-            <div>
-              <h3>Os combinados também fazem parte do cuidado.</h3>
-              <p>
-                No acompanhamento contínuo, a comunicação, a frequência das
-                reuniões e as entregas são definidas conforme suas necessidades
-                e o contrato.
-              </p>
-            </div>
             <dl class="experience-items">
               <div>
-                <dt>Comunicação</dt>
+                <dt>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-message" /></svg
+                  >Comunicação
+                </dt>
                 <dd>
-                  WhatsApp e e-mail, com disponibilidade flexível definida em
+                  WhatsApp e e-mail. Disponibilidade flexível definida em
                   contrato.
                 </dd>
               </div>
               <div>
-                <dt>Documentos e tarefas</dt>
-                <dd>
-                  Tratamento individual dos documentos, tarefas, pendências e
-                  prioridades de cada cliente.
-                </dd>
+                <dt>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-calendar" /></svg
+                  >Reuniões de alinhamento
+                </dt>
+                <dd>Semanais, quinzenais ou mensais, conforme o contrato.</dd>
               </div>
               <div>
-                <dt>Reuniões de alinhamento</dt>
+                <dt>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-clipboard" /></svg
+                  >Acompanhamento
+                </dt>
                 <dd>
-                  Semanais, quinzenais ou mensais, de acordo com o que for
-                  combinado.
-                </dd>
-              </div>
-              <div>
-                <dt>Relatórios de atividades</dt>
-                <dd>
-                  Formato e frequência de acompanhamento definidos na proposta.
+                  Documentos e tarefas individuais, pendências, prioridades e
+                  relatórios de atividades, conforme a proposta.
                 </dd>
               </div>
             </dl>
@@ -1166,9 +1371,7 @@
             <a class="footer-name" href="#inicio"
               >Maria Vitoria Benaglia<span aria-hidden="true">.</span></a
             >
-            <p>
-              Acompanhamento personalizado<br>Desenvolvimento web por projeto
-            </p>
+            <p>Acompanhamento personalizado · Desenvolvimento web.</p>
           </div>
           <nav aria-label="Navegação do rodapé">
             <a href="#inicio">Início</a><a href="#servicos">Serviços</a
@@ -1177,25 +1380,28 @@
           </nav>
         </div>
         <div class="footer-bottom">
-          <p>
-            © <span id="ano">2026</span> Maria Vitoria Benaglia. Todos os
-            direitos reservados.
-          </p>
+          <p>© <span id="ano">2026</span> Maria Vitoria Benaglia.</p>
           <div class="footer-socials">
             <a
               href="https://www.linkedin.com/in/maria-vitoria-benaglia/"
               target="_blank"
               rel="noopener noreferrer"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-linkedin" /></svg
               >LinkedIn</a
             ><a
               href="https://github.com/mariavitoriabenaglia"
               target="_blank"
               rel="noopener noreferrer"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-github" /></svg
               >GitHub</a
             ><a
               href="https://www.instagram.com/mariavbenaglia/"
               target="_blank"
               rel="noopener noreferrer"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-instagram" /></svg
               >Instagram</a
             >
           </div>
@@ -1206,5 +1412,21 @@
         </div>
       </div>
     </footer>
+    <whatsapp-floating-button
+      ><a
+        class="whatsapp-floating-link"
+        href="https://wa.me/5519993343468?text=Oi%20Maria,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Vamos conversar pelo WhatsApp (abre em nova aba)"
+        ><img
+          class="whatsapp-floating-icon"
+          src="images/whatsapp.svg"
+          alt=""
+          width="28"
+          height="28"
+          aria-hidden="true"><span class="whatsapp-floating-label">Vamos conversar</span></a
+      ></whatsapp-floating-button
+    >
   </body>
 </html>

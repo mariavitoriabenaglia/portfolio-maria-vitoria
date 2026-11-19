@@ -8,6 +8,13 @@ const html = await readFile(path.join(root, "index.html"), "utf8");
 const css = await readFile(path.join(root, "style.css"), "utf8");
 const js = await readFile(path.join(root, "script.js"), "utf8");
 new vm.Script(js, { filename: "script.js" });
+new vm.Script(
+  await readFile(
+    path.join(root, "components/WhatsAppFloatingButton.js"),
+    "utf8",
+  ),
+  { filename: "components/WhatsAppFloatingButton.js" },
+);
 
 // Os mercados compartilham escopos; a oferta internacional fica preparada na fonte.
 const offers = JSON.parse(
@@ -79,7 +86,7 @@ await mkdir(output, { recursive: true });
 for (const file of ["index.html", "style.css", "script.js", "favicon.svg"]) {
   await copyFile(path.join(root, file), path.join(output, file));
 }
-for (const directory of ["images", "fonts"]) {
+for (const directory of ["images", "fonts", "components"]) {
   await cp(path.join(root, directory), path.join(output, directory), {
     recursive: true,
   });

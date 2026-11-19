@@ -9,6 +9,7 @@ O site mantém HTML5 e CSS3, com JavaScript puro para melhoria progressiva da na
 - `index.html`: conteúdo semântico, metadados e dados estruturados.
 - `style.css`: tokens de identidade, componentes e regras mobile-first.
 - `script.js`: menu mobile, seção ativa e entradas suaves opcionais.
+- `components/WhatsAppFloatingButton.js`: Web Component reutilizável do contato flutuante.
 - `images/`: fotografia e screenshots reais, com originais preservados.
 - `fonts/`: DM Sans variável e Playfair Display itálica hospedadas localmente, com suas licenças OFL. Os arquivos da fonte anterior foram preservados.
 - `scripts/build.mjs`: validação e geração do site estático em `dist/`.
@@ -36,7 +37,10 @@ O CSS de referência foi adaptado às classes reais do site em `style.css`, mant
 - Container fluido com limite de 1680 px e margens adaptáveis de 20 a 64 px: amplo em telas comuns e controlado em monitores maiores.
 - Escala única de tipografia, espaçamento, bordas e transições. Sem importar o CSS de referência como uma segunda camada global.
 - Hero com retrato real, recorte em arco e hierarquia editorial, em escala menor que a referência para preservar o equilíbrio da página.
-- Serviço principal em uma superfície de destaque; áreas administrativas, etapas e preços com composição aberta.
+- Serviços com composições distintas, palavras-chave e atividades completas em detalhes expansíveis; fluxo financeiro conectado com limites do serviço sempre visíveis.
+- Contratação em timeline de cinco etapas: horizontal no desktop e vertical nas telas menores, seguida pelos três combinados de comunicação, reuniões e acompanhamento.
+- Pacotes em superfícies azul-marinho com profundidade e brilho discreto; Profissional destacado com o selo solicitado “Mais escolhido”, sem alteração de preço ou escopo.
+- Rodapé compacto em duas linhas no desktop e empilhado no mobile; contato flutuante com espaço reservado no final da página.
 - Sobre com superfície suave e citação tipográfica; projetos administrativos em dupla, Capacita Manaus em destaque e Studio Dona Bella em composição reversa aberta.
 - Screenshots completos e ampliáveis, sem o corte `object-fit: cover` sugerido na referência para esses projetos.
 - Contato com gradiente azul discreto e links diretos, sem repetir os cards das demais seções.
@@ -82,7 +86,7 @@ O arquivo de configuração não é copiado para `dist/`. Para alterar uma ofert
 
 - Link para pular ao conteúdo, foco visível, navegação por teclado e estado da seção ativa.
 - Menu mobile com `aria-expanded`, fechamento por Escape, seleção e clique externo.
-- Navegação e detalhes dos projetos utilizáveis sem JavaScript.
+- Navegação, detalhes dos serviços e projetos e link flutuante utilizáveis sem JavaScript.
 - Preferência `prefers-reduced-motion` respeitada; conteúdo revelado imediatamente quando recebe foco pelo teclado.
 - Imagens com dimensões explícitas e textos alternativos; carregamento lazy nos projetos.
 - Screenshots em WebP para exibição, com PNG como alternativa e acesso aos originais. Os quatro arquivos de exibição passaram de 8.488.324 para 552.872 bytes, redução de 93,5%.
@@ -96,7 +100,7 @@ Auditoria axe-core nas regras WCAG 2 A/AA e 2.1 A/AA em 390 e 1440 px: nenhuma v
 
 Experiência sem JavaScript e preferência por redução de movimento também verificadas.
 
-Na atualização visual escura, a largura fluida e o contraste foram verificados nas mesmas nove larguras, preservando textos, preços e dados dos projetos. A indicação da seção ativa foi ajustada para funcionar também quando a seção de contato compacta fica próxima ao final da página.
+Na atualização visual escura, a largura fluida e o contraste foram verificados nas mesmas dez larguras, preservando textos, preços e dados dos projetos. A indicação da seção ativa foi ajustada para funcionar também quando a seção de contato compacta fica próxima ao final da página.
 
 No refinamento de copy, também foram verificados os três preços brasileiros, os valores internacionais não publicados, os escopos e mensagens dos botões de contratação, o fluxo em cinco etapas e a preservação das informações dos quatro projetos.
 
@@ -104,13 +108,20 @@ Os sites Capacita Manaus e Studio Dona Bella e os perfis GitHub e Instagram resp
 
 Na adaptação do design system, foram confirmados o carregamento das duas fontes locais, um único bloco `:root` e a ausência de `@import`. A comparação com a versão anterior confirmou a preservação dos textos, dos 40 links e das imagens, além dos escopos e preços.
 
-## Arquivos da adaptação visual
+## Refinamento de serviços, contratação, pacotes e rodapé
 
-- `style.css`: sistema visual e adaptação dos componentes e breakpoints.
-- `index.html`: somente cor da interface do navegador e preloads das fontes.
-- `fonts/dm-sans-latin-variable.woff2` e `fonts/playfair-display-latin-italic.woff2`: novas fontes locais.
-- `fonts/OFL-dmsans.txt` e `fonts/OFL-playfairdisplay.txt`: licenças das fontes.
-- `README.md`: documentação da adaptação e das verificações.
+- `index.html`: serviços com ícones e detalhes expansíveis, fluxo financeiro e transparência, timeline, destaque do pacote Profissional, rodapé e link flutuante.
+- `style.css`: estilos dessas áreas nos blocos existentes, com breakpoints, foco e redução de movimento.
+- `components/WhatsAppFloatingButton.js`: classe `WhatsAppFloatingButton`, registrada como `<whatsapp-floating-button>`. Os atributos opcionais `href` e `label` permitem reutilização; sem `href`, utiliza o contato já cadastrado no cabeçalho. O HTML existente mantém o link disponível sem JavaScript.
+- `images/whatsapp.svg`: símbolo oficial preto, preservado sem alterações, obtido no pacote de [recursos da marca WhatsApp da Meta](https://www.meta.com/brand/resources/whatsapp/whatsapp-brand/), arquivo `Digital_Glyph_Black_RGB_2026.svg`.
+- `scripts/build.mjs`: validação e cópia do componente para `dist/`.
+- `README.md`: documentação e verificações.
+
+Foram preservados os 40 links existentes, os dados dos quatro projetos e todos os preços e escopos. Foi acrescentado apenas o link flutuante, que abre o contato cadastrado em nova aba. As atividades completas dos serviços permanecem disponíveis em “Ver atividades”; os limites do apoio financeiro estão visíveis sem expansão.
+
+O botão usa o verde da marca, foco visível e rótulo acessível. Mostra “Vamos conversar” no desktop e apenas o símbolo no mobile. Não envia mensagens automaticamente.
+
+Verificação nas dez larguras indicadas acima: ausência de rolagem horizontal, menu por teclado, detalhes expansíveis, timeline responsiva, carregamento do símbolo e botão fixo sem sobrepor o link de retorno ao topo. Auditoria axe-core sem violações nas regras verificadas em 390 e 1440 px. Build e validação do HTML concluídos com sucesso.
 
 ## Publicação
 
