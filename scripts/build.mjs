@@ -9,6 +9,36 @@ const css = await readFile(path.join(root, "style.css"), "utf8");
 const js = await readFile(path.join(root, "script.js"), "utf8");
 new vm.Script(js, { filename: "script.js" });
 
+// Os mercados compartilham escopos; a oferta internacional fica preparada na fonte.
+const offers = JSON.parse(
+  await readFile(path.join(root, "data/web-offers.json"), "utf8"),
+);
+const packageIds = new Set(offers.packages.map((offer) => offer.id));
+for (const market of Object.values(offers.markets)) {
+  for (const offer of market.offers) {
+    if (!packageIds.has(offer.packageId) || !(offer.amount > 0)) {
+      throw new Error("Oferta com escopo ou valor inválido.");
+    }
+    if (market.published) {
+      const card = html.match(
+        new RegExp(
+          `<article\\b(?=[^>]*\\bdata-offer-id="${offer.packageId}")[\\s\\S]*?</article>`,
+        ),
+      )?.[0];
+      const price = card?.match(
+        /<data\b(?=[^>]*\bclass="offer-price")[^>]*>/,
+      )?.[0];
+      const amount = Number(price?.match(/\bvalue="([^"]+)"/)?.[1]);
+      const currency = price?.match(/\bdata-currency="([^"]+)"/)?.[1];
+      if (amount !== offer.amount || currency !== market.currency) {
+        throw new Error(
+          `Preço publicado divergente da configuração: ${offer.name}.`,
+        );
+      }
+    }
+  }
+}
+
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
 if (new Set(ids).size !== ids.length)
   throw new Error("IDs duplicados no HTML.");

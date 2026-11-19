@@ -1,0 +1,105 @@
+{
+  "status": "launch",
+  "scopeLanguage": "pt-BR",
+  "packages": [
+    {
+      "id": "essencial",
+      "pages": 1,
+      "sections": 4,
+      "adjustmentRounds": 1,
+      "features": [
+        "Uma página com até quatro seções",
+        "Apresentação do negócio",
+        "Serviços e informações principais",
+        "Botão de WhatsApp ou redes sociais",
+        "Layout responsivo",
+        "Publicação em link gratuito",
+        "Uma rodada de ajustes"
+      ]
+    },
+    {
+      "id": "profissional",
+      "pages": 3,
+      "sections": null,
+      "adjustmentRounds": 2,
+      "features": [
+        "Até três páginas",
+        "Apresentação completa do negócio",
+        "Serviços e valores",
+        "Galeria de imagens",
+        "Informações de contato",
+        "Layout responsivo",
+        "SEO básico",
+        "Duas rodadas de ajustes"
+      ]
+    },
+    {
+      "id": "premium",
+      "pages": 5,
+      "sections": null,
+      "adjustmentRounds": 3,
+      "features": [
+        "Até cinco páginas",
+        "Design mais personalizado",
+        "Apresentação profissional",
+        "Catálogo de serviços",
+        "Galeria de imagens",
+        "Navegação personalizada",
+        "SEO básico",
+        "Configuração de domínio próprio",
+        "Três rodadas de ajustes"
+      ]
+    }
+  ],
+  "markets": {
+    "BR": {
+      "locale": "pt-BR",
+      "currency": "BRL",
+      "published": true,
+      "offers": [
+        {
+          "packageId": "essencial",
+          "name": "Essencial",
+          "amount": 90
+        },
+        {
+          "packageId": "profissional",
+          "name": "Profissional",
+          "amount": 250
+        },
+        {
+          "packageId": "premium",
+          "name": "Premium",
+          "amount": 600
+        }
+      ]
+    },
+    "US": {
+      "locale": "en-US",
+      "currency": "USD",
+      "published": false,
+      "offers": [
+        {
+          "packageId": "essencial",
+          "name": "Essential",
+          "amount": 70
+        },
+        {
+          "packageId": "profissional",
+          "name": "Professional",
+          "amount": 100
+        },
+        {
+          "packageId": "premium",
+          "name": "Premium",
+          "amount": 300
+        }
+      ]
+    }
+  },
+  "additionalCosts": {
+    "paidDomainAndHostingSeparate": true,
+    "premiumDomainConfigurationIncluded": true,
+    "domainPurchaseAndRenewalIncluded": false
+  }
+}
