@@ -16,7 +16,7 @@ O site mantém HTML5 e CSS3, com JavaScript puro para melhoria progressiva da na
 
 ## Executar o build
 
-Requer Node.js 20 ou superior. Não há dependências para instalar.
+Requer Node.js 24, a mesma versão configurada na Vercel. Não há dependências para instalar.
 
 ```sh
 npm run build
