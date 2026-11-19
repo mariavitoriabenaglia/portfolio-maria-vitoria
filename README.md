@@ -1,69 +1,78 @@
-# Portfólio Profissional - Maria Vitoria Benaglia
+# Portfólio — Maria Vitória Benaglia
 
-Landing Page desenvolvida para o Desafio 01 da Koodie.
+Portfólio profissional para apresentar serviços de assistência pessoal e virtual, organização administrativa, atendimento e desenvolvimento web.
 
-O projeto apresenta minha trajetória profissional, competências e projetos relacionados a operações comerciais, Customer Success, organização de processos e soluções digitais.
+## Tecnologia e estrutura
 
-## Tecnologias
+O site mantém HTML5 e CSS3, com JavaScript puro para melhoria progressiva da navegação. Não utiliza framework nem bibliotecas em produção.
 
-- HTML5
-- CSS3
-- Git
-- GitHub
-- GitHub Pages
+- `index.html`: conteúdo semântico, metadados e dados estruturados.
+- `style.css`: tokens de identidade, componentes e regras mobile-first.
+- `script.js`: menu mobile, seção ativa e entradas suaves opcionais.
+- `images/`: fotografia e screenshots reais, com originais preservados.
+- `fonts/`: Manrope variável hospedada localmente, com licença OFL.
+- `scripts/build.mjs`: validação e geração do site estático em `dist/`.
+- `vercel.json`: build e diretório de publicação na Vercel.
 
-## Projetos apresentados
+## Executar o build
 
-- Painel Comercial
-- Gestão de Alunos e Pagamentos
-- InfoCar - projeto desenvolvido durante a formação Koodie
+Requer Node.js 20 ou superior. Não há dependências para instalar.
 
-Os projetos profissionais foram apresentados com dados fictícios ou anonimizados para preservar informações reais.
+```sh
+npm run build
+```
 
-## Acessibilidade
+O build verifica a sintaxe do JavaScript, IDs duplicados, referências locais, âncoras, dados estruturados e a proteção de links externos. Em seguida, copia os arquivos públicos para `dist/`.
 
-O projeto utiliza HTML semântico, hierarquia adequada de títulos, textos alternativos em imagens, contraste de cores e estilos de foco para navegação por teclado.
+Para uma consulta rápida, abra `index.html` no navegador. Para revisar o build com carregamento de fontes e comportamento equivalente à publicação, sirva `dist/` por um servidor HTTP estático.
 
-## Responsividade
+## Direção de UI/UX
 
-A página foi desenvolvida para funcionar em desktop, tablet e celular, sem rolagem horizontal.
+- Azul-marinho `#142B4A` para hierarquia; azul royal `#2563EB` para ações; branco e off-white para leitura.
+- Manrope para clareza de interface e serifas pontuais para dar personalidade à apresentação.
+- Fotografia real no Hero, em vez de painéis decorativos.
+- Assistência pessoal e administrativa em destaque; desenvolvimento web como competência complementar.
+- Projetos administrativos em dupla e sites em apresentações amplas. Capturas completas podem ser ampliadas.
+- Detalhes nativos expansíveis mantêm as funcionalidades e a participação no projeto disponíveis sem sobrecarregar a leitura inicial.
+- Contato com uma ação principal no WhatsApp e canais secundários identificados.
 
-## Uso de Inteligência Artificial
+## Projetos
 
-A Inteligência Artificial foi utilizada como apoio no planejamento da página, organização da estrutura semântica, revisão de textos, desenvolvimento e refinamento do CSS e identificação de melhorias de acessibilidade e responsividade.
+1. Painel Comercial.
+2. Gestão de Alunos e Pagamentos.
+3. Capacita Manaus — Site Institucional: https://capacita-manaus.vercel.app/
+4. Studio Dona Bella — Site-vitrine: https://studio-dona-bella.vercel.app/
 
-### Prompt 01 — Planejamento
+As interfaces administrativas apresentam dados fictícios ou anonimizados. As descrições usam informações fornecidas pela autora, sem métricas de resultado ou tecnologias não confirmadas.
 
-Solicitei o planejamento de uma Landing Page de portfólio profissional
-utilizando HTML5 e CSS3, com foco em estrutura semântica, acessibilidade,
-responsividade e apresentação de projetos profissionais.
+## Acessibilidade e desempenho
 
-### Prompt 02 — Estrutura HTML
+- Link para pular ao conteúdo, foco visível, navegação por teclado e estado da seção ativa.
+- Menu mobile com `aria-expanded`, fechamento por Escape, seleção e clique externo.
+- Navegação e detalhes dos projetos utilizáveis sem JavaScript.
+- Preferência `prefers-reduced-motion` respeitada; conteúdo revelado imediatamente quando recebe foco pelo teclado.
+- Imagens com dimensões explícitas e textos alternativos; carregamento lazy nos projetos.
+- Screenshots em WebP para exibição, com PNG como alternativa e acesso aos originais. Os quatro arquivos de exibição passaram de 8.488.324 para 552.872 bytes, redução de 93,5%.
+- Fontes e ícones locais, sem requisições a bibliotecas ou serviços de fontes.
 
-Solicitei apoio para estruturar o HTML utilizando header, nav, main,
-section, article, figure e footer, sem JavaScript ou CSS inline.
+## Verificação da reformulação — 19/11/2026
 
-### Prompt 03 — Identidade visual
+Build executado com sucesso. Verificação de navegador em Edge/Chromium nas larguras 320, 390, 640, 768, 1024, 1440 e 1920 px, incluindo menu por teclado, seção ativa, imagens WebP, detalhes expansíveis e destinos do WhatsApp.
 
-Solicitei sugestões para desenvolver a identidade visual do portfólio,
-criando uma interface responsiva e acessível, com cores específicas para
-diferenciar os projetos.
+Auditoria axe-core nas regras WCAG 2 A/AA e 2.1 A/AA em 390 e 1440 px: nenhuma violação automatizada detectada após as correções. Essa auditoria complementa a revisão visual e por teclado; não equivale a uma certificação de acessibilidade.
 
-### Como a IA ajudou
+Experiência sem JavaScript e preferência por redução de movimento também verificadas.
 
-A Inteligência Artificial foi utilizada como apoio durante o planejamento,
-estruturação do HTML, desenvolvimento do CSS, revisão de acessibilidade,
-responsividade e refinamento visual.
+Os sites Capacita Manaus e Studio Dona Bella e os perfis GitHub e Instagram responderam com HTTP 200. O LinkedIn retornou HTTP 999 para a consulta automatizada; seu endereço original foi preservado.
 
-As sugestões foram analisadas, testadas e modificadas durante o
-desenvolvimento para que eu compreendesse as escolhas feitas no projeto.
+## Publicação
 
-## Site publicado
+- Vercel: https://portfolio-maria-vitoria.vercel.app/
+- GitHub Pages: https://mariavitoriabenaglia.github.io/portfolio-maria-vitoria/
+- Repositório: https://github.com/mariavitoriabenaglia/portfolio-maria-vitoria
 
-GitHub Pages: https://mariavitoriabenaglia.github.io/portfolio-maria-vitoria/
+A Vercel executa `npm run build` e publica `dist/`. O GitHub Pages pode continuar servindo os arquivos estáticos da raiz na branch `main`.
 
-Vercel: https://portfolio-maria-vitoria.vercel.app/
+## Uso de inteligência artificial
 
-## Repositório
-
-https://github.com/mariavitoriabenaglia/portfolio-maria-vitoria
+A inteligência artificial foi utilizada como apoio no planejamento, na estruturação do conteúdo, no desenvolvimento, na reformulação de UI/UX e nas verificações técnicas. Informações pessoais, serviços e projetos foram preservados a partir dos dados fornecidos pela autora.

@@ -1,596 +1,944 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta
-        name="description"
-        content="Portfólio profissional de Maria Vitoria Benaglia com projetos em operações comerciais, gestão administrativa, desenvolvimento web, assistência virtual e Customer Success."
-    >
-
-    <title>Maria Vitoria Benaglia | Portfólio Profissional</title>
-
+      name="description"
+      content="Maria Vitória Benaglia: assistência pessoal e virtual, organização administrativa e desenvolvimento web para profissionais e pequenos negócios.">
+    <meta name="theme-color" content="#F8FAFC">
+    <title>Maria Vitória Benaglia | Assistência e soluções digitais</title>
+    <link rel="canonical" href="https://portfolio-maria-vitoria.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta
+      property="og:title"
+      content="Maria Vitória Benaglia | Assistência e soluções digitais">
+    <meta
+      property="og:description"
+      content="Organização para a rotina. Clareza para os processos. Soluções para sua presença digital.">
+    <meta
+      property="og:url"
+      content="https://portfolio-maria-vitoria.vercel.app/">
+    <meta
+      property="og:image"
+      content="https://portfolio-maria-vitoria.vercel.app/images/maria-vitoria.jpg">
+    <meta property="og:image:alt" content="Maria Vitória Benaglia">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link
+      rel="preload"
+      href="fonts/manrope-latin-variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin>
     <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Maria Vitória Benaglia",
+        "url": "https://portfolio-maria-vitoria.vercel.app/",
+        "image": "https://portfolio-maria-vitoria.vercel.app/images/maria-vitoria.jpg",
+        "sameAs": [
+          "https://www.linkedin.com/in/maria-vitoria-benaglia/",
+          "https://github.com/mariavitoriabenaglia",
+          "https://www.instagram.com/mariavbenaglia/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <svg
+      class="icon-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <defs>
+        <symbol id="icon-arrow" viewBox="0 0 24 24">
+          <path d="M5 12h14m-6-6 6 6-6 6" />
+        </symbol>
+        <symbol id="icon-external" viewBox="0 0 24 24">
+          <path d="M6 18 18 6M6 6h12v12" />
+        </symbol>
+        <symbol id="icon-down" viewBox="0 0 24 24">
+          <path d="M12 4v16m-6-6 6 6 6-6" />
+        </symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24">
+          <path d="m5 12 4 4L19 6" />
+        </symbol>
+        <symbol id="icon-calendar" viewBox="0 0 24 24">
+          <rect x="3" y="5" width="18" height="16" rx="2" />
+          <path d="M7 3v4m10-4v4M3 11h18m-13 5h3m3 0h2" />
+        </symbol>
+        <symbol id="icon-folder" viewBox="0 0 24 24">
+          <path
+            d="M3 7a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"
+          />
+          <path d="M7 13h10m-10 4h6" />
+        </symbol>
+        <symbol id="icon-message" viewBox="0 0 24 24">
+          <path
+            d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 10 10 0 0 1-4-.8L3 21l1.8-5.5a10 10 0 0 1-.8-4A8.5 8.5 0 0 1 12.5 3H13a8.5 8.5 0 0 1 8 8v.5Z"
+          />
+          <path d="M8 11h8m-8 4h5" />
+        </symbol>
+        <symbol id="icon-code" viewBox="0 0 24 24">
+          <rect x="2" y="3" width="20" height="18" rx="2" />
+          <path d="M2 8h20m-13 4-3 3 3 3m6-6 3 3-3 3" />
+        </symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="2" />
+          <path d="M8 10v7m0-10v.1m4 9.9v-7m0 3a3 3 0 0 1 6 0v4" />
+        </symbol>
+        <symbol id="icon-github" viewBox="0 0 24 24">
+          <path
+            d="M9 19c-4 1-4-2-6-2m12 5v-3.4a3 3 0 0 0-.8-2.3c2.7-.3 5.6-1.3 5.6-6A4.7 4.7 0 0 0 18.5 7a4.3 4.3 0 0 0-.1-3s-1-.3-3.4 1.2a11.4 11.4 0 0 0-6 0C6.6 3.7 5.6 4 5.6 4a4.3 4.3 0 0 0-.1 3 4.7 4.7 0 0 0-1.3 3.3c0 4.7 2.9 5.7 5.6 6A3 3 0 0 0 9 18.6V22"
+          />
+        </symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M17.5 6.5h.01" />
+        </symbol>
+        <symbol id="icon-plus" viewBox="0 0 24 24">
+          <path d="M12 5v14M5 12h14" />
+        </symbol>
+        <symbol id="icon-expand" viewBox="0 0 24 24">
+          <path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6" />
+        </symbol>
+      </defs>
+    </svg>
     <header class="cabecalho">
-        <div class="identidade">
-            <p class="nome-profissional">Maria Vitoria Benaglia</p>
-        </div>
-
-        <nav class="navegacao-principal" aria-label="Navegação principal">
-            <ul>
-                <li>
-                    <a href="#inicio">Início</a>
-                </li>
-
-                <li>
-                    <a href="#servicos">Serviços</a>
-                </li>
-
-                <li>
-                    <a href="#sobre">Sobre</a>
-                </li>
-
-                <li>
-                    <a href="#projetos">Projetos</a>
-                </li>
-
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-            </ul>
+      <div class="container header-inner">
+        <a class="identidade" href="#inicio"
+          ><strong
+            >Maria Vitória Benaglia<span aria-hidden="true">.</span></strong
+          ><span>Assistência &amp; soluções digitais</span></a
+        >
+        <nav
+          class="navegacao-principal"
+          id="navegacao"
+          aria-label="Navegação principal"
+        >
+          <ul>
+            <li><a href="#inicio" aria-current="location">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
         </nav>
-    </header>
-
-
-    <main>
-
-        <!-- HERO -->
-        <section id="inicio" class="hero" aria-labelledby="titulo-principal">
-            <div class="hero-conteudo">
-
-                <header class="hero-texto">
-                    <p class="hero-area-profissional">
-                        Assistência Pessoal • Assistência Virtual • Organização Administrativa
-                    </p>
-
-                    <h1 id="titulo-principal">
-                        Organização para sua rotina. Soluções digitais para o seu negócio.
-                    </h1>
-
-                    <p class="hero-descricao">
-                        Sou Maria Vitoria Benaglia. Atuo com assistência pessoal e profissional remota,
-                        suporte administrativo, atendimento e organização de processos, ajudando profissionais
-                        e pequenos negócios a terem mais organização no dia a dia.
-                    </p>
-
-                    <p class="hero-descricao-secundaria">
-                        Como serviço complementar, também desenvolvo portfólios profissionais,
-                        landing pages e sites-vitrine para apresentação de serviços e negócios.
-                    </p>
-
-                    <p class="hero-acoes">
-
-                        <a
-                            href="https://wa.me/5519993343468?text=Oii%20Maria,%20vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20informações."
-                            class="cta-projetos"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Falar comigo no WhatsApp
-                        </a>
-
-                    <a
-                        href="#projetos"
-                        class="cta-secundario"
-                    >
-                        Conhecer meus projetos
-                    </a>
-
-                </p>
-                
-                </header>
-
-
-                <aside
-                    class="hero-visual"
-                    aria-label="Serviços e áreas de atuação"
-                >
-
-                    <article class="hero-card hero-card-organizacao">
-                        <p class="hero-card-label">Assistência</p>
-
-                        <strong class="hero-card-titulo">
-                            Organização da rotina
-                        </strong>
-
-                        <ul class="hero-tarefas">
-                            <li>
-                                <span class="status concluido">Organização</span>
-                                Agenda e compromissos
-                            </li>
-
-                            <li>
-                                <span class="status concluido">Suporte</span>
-                                Demandas administrativas
-                            </li>
-
-                            <li>
-                                <span class="status andamento">Acompanhamento</span>
-                                Pendências e processos
-                            </li>
-                        </ul>
-                    </article>
-
-
-                    <article class="hero-card hero-card-cs">
-                        <p class="hero-card-label">Assistência Virtual</p>
-
-                        <strong class="hero-indicador">
-                            Rotinas
-                        </strong>
-
-                        <p class="hero-card-descricao">
-                            Organização e suporte remoto
-                        </p>
-                    </article>
-
-
-                    <article class="hero-card hero-card-crm">
-                        <p class="hero-card-label">Administrativo</p>
-
-                        <strong class="hero-indicador">
-                            Processos
-                        </strong>
-
-                        <p class="hero-card-descricao">
-                            Controles e acompanhamento
-                        </p>
-                    </article>
-
-
-                    <article class="hero-card hero-card-followup">
-                        <p class="hero-card-label">Desenvolvimento Web</p>
-
-                        <strong class="hero-card-titulo">
-                            Presença e posicionamento digital
-                        </strong>
-
-                        <p class="hero-card-descricao">
-                            Portfólios, landing pages e sites-vitrine para apresentar profissionais,
-                            serviços e pequenos negócios.
-                        </p>
-                    </article>
-
-                </aside>
-
-            </div>
-        </section>
-
-        <!-- SERVIÇOS -->
-         <section
-            id="servicos"
-            class="servicos"
-            aria-labelledby="titulo-servicos"
-         >
-         <header class="servicos-introducao">
-            <p class="secao-label">Como posso te ajudar</p>
-
-            <h2 id="titulo-servicos">
-                Serviços
-            </h2>
-
-            <p>
-                Apoio profissionais e pequenos negócios na organização da rotina,
-                das demandas administrativas e da presença digital.
-            </p>
-        </header>
-
-            <a 
-                class="servico servico-principal"
-                href="https://wa.me/5519993343468?text=Oi%20Maria,%20vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20seu%20serviço%20de%20assistência%20pessoal%20e%20profissional%20remota."
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <p class="rotulo-card">Serviço Principal</p>
-
-                <h3>Assistência Pessoal e Profissional Remota</h3>
-
-                <p>
-                    Suporte para organizar compromissos, pesquisas, reservas,
-                    pendências e demandas do dia a dia pessoal e profissional.
-                </p>
-
-                <strong> Quero saber mais</strong>
-            </a>
-
-            <a 
-                class="servico"
-                href="https://wa.me/5519993343468?text=Oi%20Maria,%20vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20assistência%20virtual%20e%20administrativa."
-                target="_blank"
-                rel="noopener noreferrer" 
-            >
-                <h3>Assistência Virtual e Administrativa</h3>
-
-                <p>
-                    Organização de planilhas, informações, documentos,
-                    processos, controles e rotinas administrativas.
-                </p>
-
-                <strong> Quero saber mais</strong>
-            </a>
-
-            <a 
-                class="servico"
-                href="https://wa.me/5519993343468?text=Oi%20Maria,%20vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20atendimento%20e%20relacionamento%20e%20organização%20de%20processos."
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <h3>Atendimento e Processos</h3>
-
-                <p>
-                    Apoio no atendimento, acompanhamento de solicitações,
-                    organização de demandas e relacionamento com clientes.
-                </p>
-
-                <strong> Quero saber mais</strong>
-            </a>
-
-            <a
-                class="servico"
-                href="https://wa.me/5519993343468?text=Oi%20Maria,%20vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20criação%20de%20landing%20pages,%20sites-vitrine%20e%20portfólios%20profissionais."
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <h3>Desenvolvimento Web</h3>
-
-                <p>
-                    Criação de portfólios profissionais, landing pages e sites
-                    simples para apresentação de serviços, negócios e cardápios.
-                </p>
-
-                <strong> Quero saber mais</strong>
-            </a>
-        </section>
-
-        <!-- SOBRE -->
-        <section id="sobre" class="sobre" aria-labelledby="titulo-sobre">
-
-            <div class="sobre-conteudo">
-
-            <img 
-                class="sobre-foto"
-                src="images/maria-vitoria.jpg"
-                alt="Retrato profissional de Maria Vitoria Benaglia."
-            >
-
-            <article class="sobre-texto">
-
-                <p class="secao-label">Sobre minha trajetória</p>
-
-                <h2 id="titulo-sobre">Sobre Mim</h2>
-
-                <p>
-                    Me formei em Arquitetura e Urbanismo mas a vida me levou a atuar na área de assistência administrativa. 
-                    Minha atuação reúne organização de rotinas, suporte administrativo, atendimento e acompanhamento de demandas. 
-                    Gosto de transformar informações e tarefas espalhadas em processos mais claros,
-                    organizados e fáceis de acompanhar.
-                </p>
-
-                <p>
-                    Atualmente, estou cursando Administração e desenvolvimento web,
-                    ampliando minha atuação com soluções digitais simples para
-                    profissionais e pequenos negócios.
-                </p>
-
-                <p>
-                    Precisa de apoio para organizar sua rotina, suas demandas ou seu negócio?
-                </p>
-
-                <a
-                    class="sobre-cta"
-                    href="https://wa.me/5519993343468?text=Oi%20Maria,%20vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20informações."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Falar comigo no WhatsApp →
-                </a>
-
-                <ul class="areas-atuacao">
-
-                    <li class="area-atuacao">
-                        <h3>Assistência e Organização</h3>
-
-                        <p>
-                            Apoio na organização de compromissos, demandas, informações,
-                            planilhas, controles e rotinas administrativas.
-                        </p>
-                    </li>
-
-                    <li class="area-atuacao">
-                        <h3>Atendimento e Processos</h3>
-
-                        <p>
-                            Acompanhamento de solicitações, organização de demandas
-                            e suporte ao relacionamento com clientes.
-                        </p>
-                    </li>
-
-                    <li class="area-atuacao">
-                        <h3>Desenvolvimento Web</h3>
-
-                        <p>
-                            Criação de portfólios, landing pages e sites simples para
-                            apresentação de profissionais, serviços e pequenos negócios.
-                        </p>
-                    </li>
-
-                </ul>
-
-            </article>
-
+        <div class="header-actions">
+          <a
+            class="button button-primary header-cta"
+            href="https://wa.me/5519993343468?text=Oi%20Maria,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Vamos conversar pelo WhatsApp (abre em nova aba)"
+            ><span>Vamos conversar</span
+            ><svg class="icon" aria-hidden="true">
+              <use href="#icon-message" /></svg
+          ></a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-controls="navegacao"
+            aria-expanded="false"
+            aria-label="Abrir menu de navegação"
+            hidden
+          >
+            <span></span><span></span>
+          </button>
         </div>
-
-    </section>
-    
-        
-        <!-- PROJETOS -->
-       <section
-            id="projetos"
-            class="projetos"
-            aria-labelledby="titulo-projetos"
-        >
-
-        <header class="projetos-introducao">
-
-            <p class="secao-label">Projetos e soluções</p>
-
-            <h2 id="titulo-projetos">
-                Projetos
+      </div>
+    </header>
+    <main id="conteudo" tabindex="-1">
+      <section
+        id="inicio"
+        class="hero"
+        aria-labelledby="titulo-principal"
+        tabindex="-1"
+      >
+        <div class="container">
+          <div class="hero-conteudo">
+            <div class="hero-texto">
+              <p class="eyebrow">Pessoas, processos e presença digital</p>
+              <h1 id="titulo-principal">
+                Organizo rotinas,<br>processos e<br><span
+                  >soluções digitais.</span
+                >
+              </h1>
+              <p class="hero-lead">
+                Para profissionais e pequenos negócios que querem mais clareza
+                no dia a dia.
+              </p>
+              <p class="hero-description">
+                Assistência pessoal e virtual, organização administrativa,
+                atendimento e desenvolvimento web para facilitar sua rotina e
+                fortalecer sua presença digital.
+              </p>
+              <div class="hero-acoes">
+                <a
+                  class="button button-primary"
+                  href="https://wa.me/5519993343468?text=Oi%20Maria,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Vamos conversar
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-external" /></svg
+                ></a>
+                <a class="button button-secondary" href="#projetos"
+                  >Conheça meus projetos
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-arrow" /></svg
+                ></a>
+              </div>
+              <a class="explore-link" href="#servicos"
+                ><span class="explore-icon"
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="#icon-down" /></svg
+                ></span>
+                Um pouco de como posso ajudar</a
+              >
+            </div>
+            <div class="hero-visual">
+              <figure class="portrait-frame">
+                <img
+                  class="hero-photo"
+                  src="images/maria-vitoria.jpg"
+                  alt="Maria Vitória Benaglia."
+                  width="400"
+                  height="400"
+                  fetchpriority="high"
+                  decoding="async">
+                <figcaption>
+                  <strong>Maria Vitória Benaglia</strong
+                  ><span
+                    >Organização com cuidado.<br>Soluções com propósito.</span
+                  >
+                </figcaption>
+              </figure>
+              <div class="portrait-note" aria-hidden="true">
+                <span class="note-icon"
+                  ><svg class="icon"><use href="#icon-check" /></svg></span
+                ><span
+                  >Clareza para a rotina.<br><strong
+                    >Tempo para o que importa.</strong
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="hero-footnote">
+            <p>O que conecta meu trabalho</p>
+            <ul>
+              <li>Organização</li>
+              <li>Atenção aos detalhes</li>
+              <li>Soluções práticas</li>
+            </ul>
+            <span
+              >Do cotidiano ao digital
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-arrow" /></svg
+            ></span>
+          </div>
+        </div>
+      </section>
+      <section
+        id="servicos"
+        class="section servicos"
+        aria-labelledby="titulo-servicos"
+        tabindex="-1"
+      >
+        <div class="container">
+          <header class="section-heading" data-reveal>
+            <div>
+              <p class="eyebrow">01 / Como posso ajudar</p>
+              <h2 id="titulo-servicos">
+                Apoio para a rotina.<br><span>Clareza para o negócio.</span>
+              </h2>
+            </div>
+            <p>
+              Um suporte próximo e organizado para suas demandas pessoais,
+              administrativas e digitais.
+            </p>
+          </header>
+          <div class="services-grid">
+            <article class="servico servico-principal" data-reveal>
+              <div class="service-top">
+                <span class="service-icon"
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="#icon-calendar" /></svg></span
+                ><span class="service-label">Assistência pessoal</span
+                ><span class="service-number" aria-hidden="true">01</span>
+              </div>
+              <h3>Assistência Pessoal e<br>Profissional Remota</h3>
+              <p>
+                Suporte para organizar compromissos, pesquisas, reservas e
+                pendências do dia a dia pessoal e profissional.
+              </p>
+              <ul class="service-benefits">
+                <li>Uma rotina mais leve e organizada</li>
+                <li>Demandas acompanhadas com atenção</li>
+              </ul>
+              <a
+                class="text-link"
+                href="https://wa.me/5519993343468?text=Oi%20Maria,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20saber%20mais%20sobre%20seu%20servi%C3%A7o%20de%20assist%C3%AAncia%20pessoal%20e%20profissional%20remota."
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Conversar sobre este serviço: assistência pessoal e profissional remota pelo WhatsApp"
+                >Conversar sobre este serviço
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-external" /></svg
+              ></a>
+            </article>
+            <article class="servico servico-administrativo" data-reveal>
+              <div class="service-top">
+                <span class="service-icon"
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="#icon-folder" /></svg></span
+                ><span class="service-label">Assistência administrativa</span
+                ><span class="service-number" aria-hidden="true">02</span>
+              </div>
+              <h3>Assistência Virtual<br>e Administrativa</h3>
+              <p>
+                Organização de planilhas, documentos, informações, controles e
+                rotinas administrativas, com suporte remoto.
+              </p>
+              <ul class="service-benefits">
+                <li>Informações fáceis de encontrar</li>
+                <li>Mais clareza para acompanhar pendências</li>
+              </ul>
+              <a
+                class="text-link"
+                href="https://wa.me/5519993343468?text=Oi%20Maria,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20saber%20mais%20sobre%20assist%C3%AAncia%20virtual%20e%20administrativa."
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Conversar sobre este serviço: assistência virtual e administrativa pelo WhatsApp"
+                >Conversar sobre este serviço
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-external" /></svg
+              ></a>
+            </article>
+            <article class="servico" data-reveal>
+              <div class="service-top">
+                <span class="service-icon"
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="#icon-message" /></svg></span
+                ><span class="service-label">Atendimento &amp; processos</span
+                ><span class="service-number" aria-hidden="true">03</span>
+              </div>
+              <h3>Atendimento e<br>Organização de Processos</h3>
+              <p>
+                Apoio no atendimento, no relacionamento com clientes e no
+                acompanhamento de solicitações e demandas.
+              </p>
+              <ul class="service-benefits">
+                <li>Comunicação mais clara e cuidadosa</li>
+                <li>Processos organizados para o dia a dia</li>
+              </ul>
+              <a
+                class="text-link"
+                href="https://wa.me/5519993343468?text=Oi%20Maria,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20saber%20mais%20sobre%20atendimento%20e%20organiza%C3%A7%C3%A3o%20de%20processos."
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Conversar sobre este serviço: atendimento e organização de processos pelo WhatsApp"
+                >Conversar sobre este serviço
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-external" /></svg
+              ></a>
+            </article>
+            <article class="servico" data-reveal>
+              <div class="service-top">
+                <span class="service-icon"
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="#icon-code" /></svg></span
+                ><span class="service-label">Competência complementar</span
+                ><span class="service-number" aria-hidden="true">04</span>
+              </div>
+              <h3>Desenvolvimento<br>Web</h3>
+              <p>
+                Portfólios, landing pages e sites-vitrine para apresentar
+                profissionais, serviços e pequenos negócios.
+              </p>
+              <ul class="service-benefits">
+                <li>Uma presença digital com identidade</li>
+                <li>Navegação pensada para celular e computador</li>
+              </ul>
+              <a
+                class="text-link"
+                href="https://wa.me/5519993343468?text=Oi%20Maria,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20landing%20pages,%20sites-vitrine%20e%20portf%C3%B3lios%20profissionais."
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Conversar sobre este serviço: desenvolvimento web pelo WhatsApp"
+                >Conversar sobre este serviço
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-external" /></svg
+              ></a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section
+        id="sobre"
+        class="section sobre"
+        aria-labelledby="titulo-sobre"
+        tabindex="-1"
+      >
+        <div class="container about-grid">
+          <div class="about-intro" data-reveal>
+            <p class="eyebrow">02 / Sobre mim</p>
+            <h2 id="titulo-sobre">
+              Organização como<br>forma de <em>cuidar.</em>
             </h2>
-
+            <blockquote>
+              “Gosto de transformar informações e tarefas espalhadas em
+              processos mais claros, organizados e fáceis de acompanhar.”
+            </blockquote>
+            <p class="about-signature">Maria Vitória Benaglia</p>
+          </div>
+          <div class="about-story" data-reveal>
             <p>
-                Alguns projetos que representam minha experiência com organização,
-                processos administrativos, automação e desenvolvimento de soluções digitais.
+              Minha formação é em <strong>Arquitetura e Urbanismo</strong>, mas
+              minha trajetória me levou à assistência administrativa. Hoje, meu
+              trabalho reúne organização de rotinas, suporte administrativo,
+              atendimento e acompanhamento de demandas.
             </p>
-
-        </header>
-
-
-        <article class="projeto">
-
-            <figure>
-                <img
-                    src="images/painel-comercial.png"
-                    alt="Interface demonstrativa de um painel para acompanhamento comercial."
-                >
-            </figure>
-
-            <p class="rotulo-card">Gestão e Processos</p>
-
-            <h3>Painel Comercial</h3>
-
             <p>
-                Solução criada para centralizar informações de leads, etapas do
-                pipeline, follow-ups e acompanhamento da rotina comercial.
+              Atualmente, estou cursando <strong>Administração</strong> e
+              estudando <strong>desenvolvimento web</strong>, ampliando minha
+              atuação com soluções digitais para profissionais e pequenos
+              negócios.
             </p>
-
-            <p class="tags">
-                <span>CRM</span>
-                <span>Pipeline</span>
-                <span>Follow-up</span>
-            </p>
-
-        </article>
-
-
-        <article class="projeto">
-
-            <figure>
-                <img
-                    src="images/gestao-alunos.png"
-                    alt="Interface administrativa para organização de alunos e pagamentos."
-                >
-            </figure>
-
-            <p class="rotulo-card">Organização Administrativa</p>
-
-            <h3>Gestão de Alunos e Pagamentos</h3>
-
+            <dl class="trajectory">
+              <div>
+                <dt>Minha base</dt>
+                <dd>
+                  Arquitetura e Urbanismo<span
+                    >Formação que faz parte da minha trajetória.</span
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>Minha atuação</dt>
+                <dd>
+                  Assistência e organização<span
+                    >Rotinas, processos e relacionamento com clientes.</span
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>Meu aprendizado</dt>
+                <dd>
+                  Administração e desenvolvimento web<span
+                    >Estudos em andamento, conectando gestão e soluções
+                    digitais.</span
+                  >
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <section
+        id="projetos"
+        class="section projetos"
+        aria-labelledby="titulo-projetos"
+        tabindex="-1"
+      >
+        <div class="container">
+          <header class="section-heading" data-reveal>
+            <div>
+              <p class="eyebrow">03 / Projetos selecionados</p>
+              <h2 id="titulo-projetos">
+                Da organização<br><span>à presença digital.</span>
+              </h2>
+            </div>
             <p>
-                Solução desenvolvida para organizar alunos, cursos, parcelas,
-                vencimentos e acompanhamento de pagamentos em um único ambiente.
+              Projetos que traduzem meu cuidado com informações, processos e
+              experiências digitais.
             </p>
-
-            <p class="tags">
-                <span>Alunos</span>
-                <span>Cursos</span>
-                <span>Pagamentos</span>
-            </p>
-
-        </article>
-
-
-        <article class="projeto">
-
-            <figure>
-                <img
-                    class="projeto-imagem-completa"
-                    src="images/capacita-manaus.png"
-                    alt="Divulgação do site institucional Capacita Manaus, com versões para computador e celular e suas principais seções."
-                    loading="lazy"
-                    width="1122"
-                    height="1402"
-                >
-            </figure>
-
-            <p class="rotulo-card">Desenvolvimento Web | React + Vite</p>
-
-            <h3>Capacita Manaus — Site Institucional</h3>
-
-            <p>
-                Site institucional responsivo para a Capacita Manaus, empresa
-                especializada em cursos, treinamentos e formação profissional.
-                Desenvolvido para apresentar a marca, divulgar cursos e serviços
-                e facilitar o contato com a equipe em desktop e mobile.
-            </p>
-
-            <p>
-                Apresentação institucional e história da empresa, catálogo de cursos
-                com direcionamento para inscrições, galeria de cursos e eventos,
-                carrossel automático, página de Kits de Fonoaudiologia, divulgação
-                de espaços para locação e integração com WhatsApp e Google Maps.
-            </p>
-
-            <p>
-                <strong>Atuação:</strong> Desenvolvimento front-end, estruturação
-                de componentes, implementação de funcionalidades, responsividade,
-                otimização de desempenho e melhorias de UI/UX.
-            </p>
-
-            <p class="tags">
-                <span>React</span>
-                <span>Vite</span>
-                <span>JavaScript</span>
-                <span>HTML5</span>
-                <span>CSS3</span>
-            </p>
-
-            <a
-                class="projeto-link"
-                href="https://capacita-manaus.vercel.app/"
+          </header>
+          <div class="projects-grid">
+            <article
+              class="projeto"
+              aria-labelledby="projeto-comercial"
+              data-reveal
+            >
+              <a
+                class="project-image-link"
+                href="images/painel-comercial.png"
                 target="_blank"
                 rel="noopener noreferrer"
-            >
-                Visualizar site Capacita Manaus →
-            </a>
-
-        </article>
-
-
-        <article class="projeto">
-
-            <figure>
-                <img
-                    src="images/studio-dona-bella.png"
-                    alt="Divulgação do site-vitrine Studio Dona Bella, com versões para computador e celular."
-                    style="aspect-ratio: auto;"
-                >
-            </figure>
-
-            <p class="rotulo-card">Desenvolvimento Web | HTML + CSS</p>
-
-            <h3>Studio Dona Bella | Site-vitrine</h3>
-
-            <p>
-                Desenvolvimento de site-vitrine para um estúdio especializado em
-                cuidados e embelezamento de unhas, com identidade visual delicada
-                e sofisticada. O projeto apresenta os serviços, valores, galeria
-                de trabalhos e informações para agendamento, com navegação intuitiva
-                e design responsivo para celulares e computadores.
-            </p>
-
-            <p class="tags">
-                <span>HTML5</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-            </p>
-
-            <a
-                class="projeto-link"
-                href="https://studio-dona-bella.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Visualizar site Studio Dona Bella →
-            </a>
-
-        </article>
-
-    </section>
-
-
-        <!-- CONTATO -->
-        <section
-            id="contato"
-            class="contato"
-            aria-labelledby="titulo-contato"
-        >
-            <header class="contato-introducao">
-
-                <p class="secao-label">Vamos conversar?</p>
-
-                <h2 id="titulo-contato">
-                    Precisa de apoio para organizar sua rotina ou seu negócio?
-                </h2>
-
-                <p>
-                    Posso te ajudar com assistência pessoal e profissional remota,
-                    organização administrativa, atendimento e também com soluções
-                    web simples para apresentar seus serviços e se posicionar digitalmente.
+                aria-label="Ampliar imagem do Painel Comercial (abre em nova aba)"
+                ><figure class="project-media">
+                  <picture
+                    ><source
+                      srcset="images/painel-comercial.webp"
+                      type="image/webp">
+                    <img
+                      src="images/painel-comercial.png"
+                      alt="Interface demonstrativa do Painel Comercial, com visão geral, leads e acompanhamento de oportunidades."
+                      width="1448"
+                      height="1086"
+                      loading="lazy"
+                      decoding="async"></picture
+                  ><span class="image-expand"
+                    ><svg class="icon" aria-hidden="true">
+                      <use href="#icon-expand" /></svg
+                  ></span></figure
+              ></a>
+              <div class="project-content">
+                <p class="project-category">
+                  <span>Gestão &amp; processos</span
+                  ><span aria-hidden="true">01</span>
                 </p>
-
-            </header>
-
-            <address class="links-contato">
-
-                <a
-                    href="https://wa.me/5519993343468?text=Oii%20Maria,%20vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20informações."
-                    class="contato-principal"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Falar comigo no Whatsapp
-                </a>
-            
-                <a
-                    href="https://www.linkedin.com/in/maria-vitoria-benaglia/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Linkedin
-                </a>
-
-                <a
-                    href="https://www.instagram.com/mariavbenaglia/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Instagram
-                </a>
-
-            </address>
-
-        </section>
-
-    </main>
-
-
-    <footer class="rodape">
-
-        <p>
-            © 2026 Maria Vitoria Benaglia.
-        </p>
-
-        <p>
-            Assistência Pessoal • Assistência Virtual • Organização Administrativa • Desenvolvimento Web
-        </p>
-
-        <p>
-            <a
-                href="https://github.com/mariavitoriabenaglia"
+                <h3 id="projeto-comercial">Painel Comercial</h3>
+                <p>
+                  Informações de leads, etapas do pipeline e follow-ups reunidas
+                  para acompanhar a rotina comercial em um só lugar.
+                </p>
+                <ul class="tags" aria-label="Áreas do projeto">
+                  <li>CRM</li>
+                  <li>Pipeline</li>
+                  <li>Follow-up</li>
+                </ul>
+                <details class="case-study">
+                  <summary>
+                    Sobre a solução
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#icon-plus" />
+                    </svg>
+                  </summary>
+                  <div class="case-body">
+                    <dl>
+                      <div>
+                        <dt>Objetivo</dt>
+                        <dd>
+                          Centralizar informações e facilitar o acompanhamento
+                          da rotina comercial.
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>Solução desenvolvida</dt>
+                        <dd>
+                          Uma interface para reunir leads, etapas do pipeline,
+                          follow-ups e acompanhamento comercial.
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>Minha participação</dt>
+                        <dd>
+                          Criação da solução para organização e acompanhamento
+                          das informações comerciais.
+                        </dd>
+                      </div>
+                    </dl>
+                  </div>
+                </details>
+                <p class="project-caption">
+                  Interface demonstrativa. Dados fictícios ou anonimizados.
+                </p>
+              </div>
+            </article>
+            <article
+              class="projeto"
+              aria-labelledby="projeto-alunos"
+              data-reveal
+            >
+              <a
+                class="project-image-link"
+                href="images/gestao-alunos.png"
                 target="_blank"
                 rel="noopener noreferrer"
-            >   
-                GitHub
-            </a>
-        </p>
-
+                aria-label="Ampliar imagem da Gestão de Alunos e Pagamentos (abre em nova aba)"
+                ><figure class="project-media">
+                  <picture
+                    ><source
+                      srcset="images/gestao-alunos.webp"
+                      type="image/webp">
+                    <img
+                      src="images/gestao-alunos.png"
+                      alt="Interface administrativa de Gestão de Alunos, com cadastros, inscrições, pagamentos e acompanhamento de cursos."
+                      width="1448"
+                      height="1086"
+                      loading="lazy"
+                      decoding="async"></picture
+                  ><span class="image-expand"
+                    ><svg class="icon" aria-hidden="true">
+                      <use href="#icon-expand" /></svg
+                  ></span></figure
+              ></a>
+              <div class="project-content">
+                <p class="project-category">
+                  <span>Organização administrativa</span
+                  ><span aria-hidden="true">02</span>
+                </p>
+                <h3 id="projeto-alunos">Gestão de Alunos<br>e Pagamentos</h3>
+                <p>
+                  Uma solução para organizar alunos, cursos, parcelas e
+                  vencimentos, facilitando o acompanhamento dos pagamentos.
+                </p>
+                <ul class="tags" aria-label="Áreas do projeto">
+                  <li>Alunos</li>
+                  <li>Cursos</li>
+                  <li>Pagamentos</li>
+                </ul>
+                <details class="case-study">
+                  <summary>
+                    Sobre a solução
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#icon-plus" />
+                    </svg>
+                  </summary>
+                  <div class="case-body">
+                    <dl>
+                      <div>
+                        <dt>Objetivo</dt>
+                        <dd>
+                          Reunir informações administrativas de alunos e
+                          pagamentos em um único ambiente.
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>Solução desenvolvida</dt>
+                        <dd>
+                          Organização de alunos, cursos, parcelas, vencimentos e
+                          acompanhamento de pagamentos.
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>Minha participação</dt>
+                        <dd>
+                          Desenvolvimento da solução para centralizar e
+                          acompanhar essas informações.
+                        </dd>
+                      </div>
+                    </dl>
+                  </div>
+                </details>
+                <p class="project-caption">
+                  Interface demonstrativa. Dados fictícios ou anonimizados.
+                </p>
+              </div>
+            </article>
+            <article
+              class="projeto project-wide"
+              aria-labelledby="projeto-capacita"
+              data-reveal
+            >
+              <a
+                class="project-image-link"
+                href="images/capacita-manaus.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ampliar apresentação do Capacita Manaus (abre em nova aba)"
+                ><figure class="project-media">
+                  <picture
+                    ><source
+                      srcset="images/capacita-manaus.webp"
+                      type="image/webp">
+                    <img
+                      src="images/capacita-manaus.png"
+                      alt="Apresentação real do site Capacita Manaus em computador e celular, com cursos, serviços, kits e contato."
+                      width="1122"
+                      height="1402"
+                      loading="lazy"
+                      decoding="async"></picture
+                  ><span class="image-expand"
+                    ><svg class="icon" aria-hidden="true">
+                      <use href="#icon-expand" /></svg
+                  ></span></figure
+              ></a>
+              <div class="project-content">
+                <p class="project-category">
+                  <span>Desenvolvimento Web · React + Vite</span
+                  ><span aria-hidden="true">03</span>
+                </p>
+                <h3 id="projeto-capacita">
+                  Capacita Manaus<span>Site institucional</span>
+                </h3>
+                <p>
+                  Um site responsivo para apresentar a marca, divulgar cursos e
+                  serviços e facilitar o contato com uma empresa de formação
+                  profissional.
+                </p>
+                <p class="project-role">
+                  <strong>Minha atuação</strong>Front-end, estruturação de
+                  componentes, funcionalidades, responsividade, desempenho e
+                  melhorias de UI/UX.
+                </p>
+                <ul class="tags" aria-label="Tecnologias utilizadas">
+                  <li>React</li>
+                  <li>Vite</li>
+                  <li>JavaScript</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                </ul>
+                <details class="case-study">
+                  <summary>
+                    Conheça o projeto
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#icon-plus" />
+                    </svg>
+                  </summary>
+                  <div class="case-body">
+                    <dl>
+                      <div>
+                        <dt>Objetivo</dt>
+                        <dd>
+                          Apresentar a história e os serviços da Capacita
+                          Manaus, especializada em cursos, treinamentos e
+                          formação profissional, com navegação intuitiva em
+                          desktop e mobile.
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>Funcionalidades</dt>
+                        <dd>
+                          Apresentação institucional, catálogo de cursos com
+                          direcionamento para inscrições, galeria de cursos e
+                          eventos, carrossel automático, página de Kits de
+                          Fonoaudiologia, espaços para locação e integração com
+                          WhatsApp e Google Maps.
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>Contribuição</dt>
+                        <dd>
+                          Desenvolvimento de uma presença digital que reúne
+                          informações da empresa e caminhos para inscrição e
+                          contato.
+                        </dd>
+                      </div>
+                    </dl>
+                  </div>
+                </details>
+                <a
+                  class="button button-primary project-cta"
+                  href="https://capacita-manaus.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visualizar projeto Capacita Manaus (abre em nova aba)"
+                  >Visualizar projeto
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-external" /></svg
+                ></a>
+              </div>
+            </article>
+            <article
+              class="projeto project-wide project-reverse"
+              aria-labelledby="projeto-bella"
+              data-reveal
+            >
+              <a
+                class="project-image-link"
+                href="images/studio-dona-bella.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ampliar apresentação do Studio Dona Bella (abre em nova aba)"
+                ><figure class="project-media">
+                  <picture
+                    ><source
+                      srcset="images/studio-dona-bella.webp"
+                      type="image/webp">
+                    <img
+                      src="images/studio-dona-bella.png"
+                      alt="Apresentação real do site Studio Dona Bella em computador e celular, com serviços, valores e galeria de unhas."
+                      width="1122"
+                      height="1402"
+                      loading="lazy"
+                      decoding="async"></picture
+                  ><span class="image-expand"
+                    ><svg class="icon" aria-hidden="true">
+                      <use href="#icon-expand" /></svg
+                  ></span></figure
+              ></a>
+              <div class="project-content">
+                <p class="project-category">
+                  <span>Desenvolvimento Web · HTML + CSS</span
+                  ><span aria-hidden="true">04</span>
+                </p>
+                <h3 id="projeto-bella">
+                  Studio Dona Bella<span>Site-vitrine</span>
+                </h3>
+                <p>
+                  Um site-vitrine para um estúdio especializado em cuidados e
+                  embelezamento de unhas, com identidade visual delicada e
+                  sofisticada.
+                </p>
+                <p class="project-role">
+                  <strong>Minha atuação</strong>Desenvolvimento do site-vitrine
+                  e da experiência responsiva para celulares e computadores.
+                </p>
+                <ul class="tags" aria-label="Tecnologias utilizadas">
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <details class="case-study">
+                  <summary>
+                    Conheça o projeto
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#icon-plus" />
+                    </svg>
+                  </summary>
+                  <div class="case-body">
+                    <dl>
+                      <div>
+                        <dt>Objetivo</dt>
+                        <dd>
+                          Apresentar o estúdio, seus serviços e trabalhos,
+                          facilitando o acesso às informações para agendamento.
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>Solução desenvolvida</dt>
+                        <dd>
+                          Site com serviços, valores, galeria de trabalhos e
+                          informações para agendamento, com navegação intuitiva
+                          e design responsivo.
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>Contribuição</dt>
+                        <dd>
+                          Uma apresentação digital que reúne a identidade do
+                          estúdio e as informações que ajudam o visitante a
+                          conhecer o trabalho e entrar em contato.
+                        </dd>
+                      </div>
+                    </dl>
+                  </div>
+                </details>
+                <a
+                  class="button button-primary project-cta"
+                  href="https://studio-dona-bella.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visualizar projeto Studio Dona Bella (abre em nova aba)"
+                  >Visualizar projeto
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-external" /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contato"
+        class="section contato"
+        aria-labelledby="titulo-contato"
+        tabindex="-1"
+      >
+        <div class="container contact-grid">
+          <div class="contact-intro" data-reveal>
+            <p class="eyebrow">04 / Vamos conversar?</p>
+            <h2 id="titulo-contato">
+              Vamos transformar suas demandas em soluções mais
+              <em>organizadas?</em>
+            </h2>
+            <p>
+              Conte um pouco sobre o que você precisa. Podemos conversar sobre
+              sua rotina, seu negócio ou seu próximo projeto digital.
+            </p>
+            <a
+              class="button button-light"
+              href="https://wa.me/5519993343468?text=Oi%20Maria,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es."
+              target="_blank"
+              rel="noopener noreferrer"
+              >Falar comigo no WhatsApp
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-external" /></svg
+            ></a>
+          </div>
+          <address class="contact-channels" data-reveal>
+            <p>Você também me encontra por aqui</p>
+            <a
+              href="https://www.linkedin.com/in/maria-vitoria-benaglia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-linkedin" /></svg
+              ><span>LinkedIn<small>Trajetória profissional</small></span
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-external" /></svg
+            ></a>
+            <a
+              href="https://github.com/mariavitoriabenaglia"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-github" /></svg
+              ><span>GitHub<small>Código e projetos</small></span
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-external" /></svg
+            ></a>
+            <a
+              href="https://www.instagram.com/mariavbenaglia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-instagram" /></svg
+              ><span>Instagram<small>Meu perfil</small></span
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-external" /></svg
+            ></a>
+          </address>
+        </div>
+      </section>
+    </main>
+    <footer class="rodape">
+      <div class="container">
+        <div class="footer-main">
+          <div>
+            <a class="footer-name" href="#inicio"
+              >Maria Vitória Benaglia<span aria-hidden="true">.</span></a
+            >
+            <p>
+              Assistência pessoal e virtual · Organização administrativa<br>Atendimento
+              e processos · Desenvolvimento web
+            </p>
+          </div>
+          <nav aria-label="Navegação do rodapé">
+            <a href="#inicio">Início</a><a href="#servicos">Serviços</a
+            ><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a
+            ><a href="#contato">Contato</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © <span id="ano">2026</span> Maria Vitória Benaglia. Todos os
+            direitos reservados.
+          </p>
+          <div class="footer-socials">
+            <a
+              href="https://www.linkedin.com/in/maria-vitoria-benaglia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            ><a
+              href="https://github.com/mariavitoriabenaglia"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            ><a
+              href="https://www.instagram.com/mariavbenaglia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </div>
+          <a class="back-top" href="#inicio"
+            >Voltar ao topo
+            <svg class="icon" aria-hidden="true"><use href="#icon-down" /></svg
+          ></a>
+        </div>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
