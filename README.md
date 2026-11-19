@@ -125,7 +125,7 @@ Verificação nas dez larguras indicadas acima: ausência de rolagem horizontal,
 
 ## Publicação
 
-- Vercel: https://portfolio-maria-vitoria.vercel.app/
+- Vercel: https://portifoliomariavitoriabenaglia.vercel.app/
 - GitHub Pages: https://mariavitoriabenaglia.github.io/portfolio-maria-vitoria/
 - Repositório: https://github.com/mariavitoriabenaglia/portfolio-maria-vitoria
 
