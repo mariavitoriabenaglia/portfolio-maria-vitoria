@@ -1,4 +1,4 @@
-# Portfólio — Maria Vitória Benaglia
+# Portfólio — Maria Vitoria Benaglia
 
 Portfólio de uma empreendedora e profissional independente que oferece acompanhamento personalizado para pessoas e pequenos negócios e desenvolvimento de sites por projeto.
 
