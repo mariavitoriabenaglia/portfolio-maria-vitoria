@@ -29,11 +29,13 @@ Para uma consulta rápida, abra `index.html` no navegador. Para revisar o build 
 
 ## Direção de UI/UX
 
-- Azul-marinho `#142B4A` para hierarquia; azul royal `#2563EB` para ações; branco e off-white para leitura.
+- Fundo azul-acinzentado escuro `#142132`, textos claros suaves e azul royal `#2563EB` para ações.
+- Largura fluida, com margens adaptáveis de 18 a 48 px. A página não utiliza mais um container central com largura máxima fixa.
+- Serviços, ofertas e projetos em áreas abertas, com divisórias discretas em vez de grandes caixas. Títulos, imagens e espaçamentos foram reduzidos.
 - Manrope para clareza de interface e serifas pontuais para dar personalidade à apresentação.
 - Fotografia real no Hero, em vez de painéis decorativos.
 - Acompanhamento contínuo e personalizado em destaque; desenvolvimento web como contratação por projeto.
-- Projetos administrativos em dupla e sites em apresentações amplas. Capturas completas podem ser ampliadas.
+- Projetos em composição compacta com imagens completas ao lado das descrições; em telas pequenas os elementos se reorganizam. As capturas originais podem ser ampliadas.
 - Detalhes nativos expansíveis mantêm as funcionalidades e a participação no projeto disponíveis sem sobrecarregar a leitura inicial.
 - Contato com uma ação principal no WhatsApp e canais secundários identificados.
 
@@ -79,6 +81,8 @@ Build executado com sucesso. Verificação de navegador em Edge/Chromium nas lar
 Auditoria axe-core nas regras WCAG 2 A/AA e 2.1 A/AA em 390 e 1440 px: nenhuma violação automatizada detectada após as correções. Essa auditoria complementa a revisão visual e por teclado; não equivale a uma certificação de acessibilidade.
 
 Experiência sem JavaScript e preferência por redução de movimento também verificadas.
+
+Na atualização visual escura, a largura fluida e o contraste foram verificados nas mesmas nove larguras, preservando textos, preços e dados dos projetos. A indicação da seção ativa foi ajustada para funcionar também quando a seção de contato compacta fica próxima ao final da página.
 
 No refinamento de copy, também foram verificados os três preços brasileiros, os valores internacionais não publicados, os escopos e mensagens dos botões de contratação, o fluxo em cinco etapas e a preservação das informações dos quatro projetos.
 

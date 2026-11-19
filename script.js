@@ -56,6 +56,13 @@
     for (const section of sections) {
       if (section.getBoundingClientRect().top <= offset) current = section;
     }
+    // Seções compactas no fim da página nem sempre alcançam o topo da janela.
+    if (
+      window.scrollY + window.innerHeight >=
+      document.documentElement.scrollHeight - 2
+    ) {
+      current = sections[sections.length - 1];
+    }
     for (const link of links) {
       if (link.hash === `#${current.id}`)
         link.setAttribute("aria-current", "location");
