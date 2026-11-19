@@ -10,7 +10,7 @@ O site mantém HTML5 e CSS3, com JavaScript puro para melhoria progressiva da na
 - `style.css`: tokens de identidade, componentes e regras mobile-first.
 - `script.js`: menu mobile, seção ativa e entradas suaves opcionais.
 - `images/`: fotografia e screenshots reais, com originais preservados.
-- `fonts/`: Manrope variável hospedada localmente, com licença OFL.
+- `fonts/`: DM Sans variável e Playfair Display itálica hospedadas localmente, com suas licenças OFL. Os arquivos da fonte anterior foram preservados.
 - `scripts/build.mjs`: validação e geração do site estático em `dist/`.
 - `data/web-offers.json`: escopos compartilhados e valores das ofertas por mercado.
 - `vercel.json`: build e diretório de publicação na Vercel.
@@ -29,15 +29,29 @@ Para uma consulta rápida, abra `index.html` no navegador. Para revisar o build 
 
 ## Direção de UI/UX
 
-- Fundo azul-acinzentado escuro `#142132`, textos claros suaves e azul royal `#2563EB` para ações.
-- Largura fluida, com margens adaptáveis de 18 a 48 px. A página não utiliza mais um container central com largura máxima fixa.
-- Serviços, ofertas e projetos em áreas abertas, com divisórias discretas em vez de grandes caixas. Títulos, imagens e espaçamentos foram reduzidos.
-- Manrope para clareza de interface e serifas pontuais para dar personalidade à apresentação.
-- Fotografia real no Hero, em vez de painéis decorativos.
-- Acompanhamento contínuo e personalizado em destaque; desenvolvimento web como contratação por projeto.
-- Projetos em composição compacta com imagens completas ao lado das descrições; em telas pequenas os elementos se reorganizam. As capturas originais podem ser ampliadas.
-- Detalhes nativos expansíveis mantêm as funcionalidades e a participação no projeto disponíveis sem sobrecarregar a leitura inicial.
-- Contato com uma ação principal no WhatsApp e canais secundários identificados.
+O CSS de referência foi adaptado às classes reais do site em `style.css`, mantendo uma única definição de tokens e uma base global. A implementação permanece em HTML, CSS e JavaScript puro.
+
+- Azul-marinho `#0D192B` no fundo, superfícies `#11223A` e `#152943`, azul royal `#326BFA` nas ações e azul claro `#8FB5FF` nos detalhes.
+- DM Sans na interface; Playfair Display itálica nos destaques editoriais do Hero, do Sobre e do Contato.
+- Container fluido com limite de 1680 px e margens adaptáveis de 20 a 64 px: amplo em telas comuns e controlado em monitores maiores.
+- Escala única de tipografia, espaçamento, bordas e transições. Sem importar o CSS de referência como uma segunda camada global.
+- Hero com retrato real, recorte em arco e hierarquia editorial, em escala menor que a referência para preservar o equilíbrio da página.
+- Serviço principal em uma superfície de destaque; áreas administrativas, etapas e preços com composição aberta.
+- Sobre com superfície suave e citação tipográfica; projetos administrativos em dupla, Capacita Manaus em destaque e Studio Dona Bella em composição reversa aberta.
+- Screenshots completos e ampliáveis, sem o corte `object-fit: cover` sugerido na referência para esses projetos.
+- Contato com gradiente azul discreto e links diretos, sem repetir os cards das demais seções.
+- Menu mobile e lógica de navegação existentes preservados. Nenhuma animação adicional de rolagem.
+
+### Correspondência com os componentes existentes
+
+| Área da referência | Classes utilizadas no projeto                                  |
+| ------------------ | -------------------------------------------------------------- |
+| Header             | `.cabecalho`, `.header-inner`, `.navegacao-principal`          |
+| Hero               | `.hero-conteudo`, `.hero-texto`, `.hero-visual`, `.hero-photo` |
+| Serviços           | `.servico`, `.servico-principal`, `.service-finance`           |
+| Sobre              | `.about-grid`, `.about-story`, `.about-intro blockquote`       |
+| Projetos           | `.projeto`, `.project-wide`, `.project-reverse`                |
+| Contato            | `.contato`, `.contact-grid`, `.contact-channels`               |
 
 ## Projetos
 
@@ -76,7 +90,7 @@ O arquivo de configuração não é copiado para `dist/`. Para alterar uma ofert
 
 ## Verificação da reformulação — 19/11/2026
 
-Build executado com sucesso. Verificação de navegador em Edge/Chromium nas larguras 320, 390, 640, 768, 1024, 1060, 1280, 1440 e 1920 px, incluindo menu por teclado, seção ativa, imagens WebP, detalhes expansíveis e destinos do WhatsApp.
+Build executado com sucesso. Verificação de navegador em Edge/Chromium nas larguras 320, 390, 640, 768, 1024, 1060, 1280, 1440, 1920 e 2560 px, incluindo menu por teclado, seção ativa, imagens WebP, detalhes expansíveis e destinos do WhatsApp.
 
 Auditoria axe-core nas regras WCAG 2 A/AA e 2.1 A/AA em 390 e 1440 px: nenhuma violação automatizada detectada após as correções. Essa auditoria complementa a revisão visual e por teclado; não equivale a uma certificação de acessibilidade.
 
@@ -87,6 +101,16 @@ Na atualização visual escura, a largura fluida e o contraste foram verificados
 No refinamento de copy, também foram verificados os três preços brasileiros, os valores internacionais não publicados, os escopos e mensagens dos botões de contratação, o fluxo em cinco etapas e a preservação das informações dos quatro projetos.
 
 Os sites Capacita Manaus e Studio Dona Bella e os perfis GitHub e Instagram responderam com HTTP 200. O LinkedIn retornou HTTP 999 para a consulta automatizada; seu endereço original foi preservado.
+
+Na adaptação do design system, foram confirmados o carregamento das duas fontes locais, um único bloco `:root` e a ausência de `@import`. A comparação com a versão anterior confirmou a preservação dos textos, dos 40 links e das imagens, além dos escopos e preços.
+
+## Arquivos da adaptação visual
+
+- `style.css`: sistema visual e adaptação dos componentes e breakpoints.
+- `index.html`: somente cor da interface do navegador e preloads das fontes.
+- `fonts/dm-sans-latin-variable.woff2` e `fonts/playfair-display-latin-italic.woff2`: novas fontes locais.
+- `fonts/OFL-dmsans.txt` e `fonts/OFL-playfairdisplay.txt`: licenças das fontes.
+- `README.md`: documentação da adaptação e das verificações.
 
 ## Publicação
 
